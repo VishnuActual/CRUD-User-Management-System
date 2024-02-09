@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const slugify = require('slugify');
 const User = require('./userModel'); 
 
+// here is somthing 
 const tourSchema = new mongoose.Schema(
   {
     name: {
