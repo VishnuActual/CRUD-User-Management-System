@@ -1,8 +1,8 @@
 const app = require('./app'); 
 const mongoose = require('mongoose'); 
+require('dotenv').config();
 
-
-DATABASE='mongodb+srv://actual:actual123123@tour.h9z7qkp.mongodb.net/'
+DATABASE= process.env.DATABASE;
 mongoose
   .connect(DATABASE, {
     useNewUrlParser: true,
